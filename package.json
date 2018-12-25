@@ -1,0 +1,33 @@
+{
+  "name": "helios-v0.2.0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "both": "concurrently \"cd client && npm start\" \"npm run dev\"",
+    "clean": "rm -rf node_modules && rm -rf client/node_modules",
+    "react-install": "cd client && npm install",
+    "installer": "npm install && npm run react-install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "path": "^0.12.7",
+    "pg-promise": "^8.5.4",
+    "ping": "^0.2.2"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
+    "nodemon": "^1.18.9"
+  }
+}

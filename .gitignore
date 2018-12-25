@@ -1,0 +1,9 @@
+.env
+
+/node_modules
+
+/build
+
+/server/controllerPersonal.js
+/server/modelPersonal.js
+/server/routerPersonal.js
